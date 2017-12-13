@@ -21,8 +21,8 @@ public class BasicFizzBuzzGame implements FizzBuzzGame {
      * @throws PlayerMistakeException if the player mades a mistake.
      */
     @Override
-    public Integer play(Integer nextnumber, String playervalue) throws PlayerMistakeException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int play(int nextnumber, String playervalue) throws PlayerMistakeException {
+        return nextnumber;
     }
     
 }

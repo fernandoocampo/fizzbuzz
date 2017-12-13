@@ -45,11 +45,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_fizz() throws Exception {
         System.out.println("play with a number that must be fizz");
-        Integer nextnumber = 3;
+        int nextnumber = 3;
         String playervalue = "FIZZ";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
-        Integer expResult = 3;
-        Integer result = instance.play(nextnumber, playervalue);
+        int expResult = 3;
+        int result = instance.play(nextnumber, playervalue);
         assertEquals(expResult, result);
     }
     
@@ -60,11 +60,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_buzz() throws Exception {
         System.out.println("play with a number that must be buzz");
-        Integer nextnumber = 5;
+        int nextnumber = 5;
         String playervalue = "BUZZ";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
-        Integer expResult = 5;
-        Integer result = instance.play(nextnumber, playervalue);
+        int expResult = 5;
+        int result = instance.play(nextnumber, playervalue);
         assertEquals(expResult, result);
     }
     
@@ -76,11 +76,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_number() throws Exception {
         System.out.println("play with a number that must not be buzz neither fizz");
-        Integer nextnumber = 4;
+        int nextnumber = 4;
         String playervalue = "4";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
-        Integer expResult = 4;
-        Integer result = instance.play(nextnumber, playervalue);
+        int expResult = 4;
+        int result = instance.play(nextnumber, playervalue);
         assertEquals(expResult, result);
     }
     
@@ -92,11 +92,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_number_when_fizz_expected() throws Exception {
         System.out.println("play with a number that must be fizz and user gave a number");
-        Integer nextnumber = 6;
+        int nextnumber = 6;
         String playervalue = "6";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
         try {
-            Integer result = instance.play(nextnumber, playervalue);
+            int result = instance.play(nextnumber, playervalue);
             fail("a PlayerMistakeException must be threw because it must be FIZZ but it was not, it returned " + result + " instead");
         } catch(PlayerMistakeException pmex) {
             assertTrue(true);
@@ -111,11 +111,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_buzz_when_fizz_expected() throws Exception {
         System.out.println("play with a number that must be fizz and user gave a buzz");
-        Integer nextnumber = 6;
+        int nextnumber = 6;
         String playervalue = "BUZZ";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
         try {
-            Integer result = instance.play(nextnumber, playervalue);
+            int result = instance.play(nextnumber, playervalue);
             fail("a PlayerMistakeException must be threw because it must be FIZZ but it was not, it returned " + result + " instead");
         } catch(PlayerMistakeException pmex) {
             assertTrue(true);
@@ -130,11 +130,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_number_when_buzz_expected() throws Exception {
         System.out.println("play with a number that must be buzz and user gave a number");
-        Integer nextnumber = 10;
+        int nextnumber = 10;
         String playervalue = "10";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
         try {
-            Integer result = instance.play(nextnumber, playervalue);
+            int result = instance.play(nextnumber, playervalue);
             fail("a PlayerMistakeException must be threw because it must be BUZZ but it was not, it returned " + result + " instead");
         } catch(PlayerMistakeException pmex) {
             assertTrue(true);
@@ -149,11 +149,11 @@ public class BasicFizzBuzzGameTest {
     @Test
     public void do_play_fizzbuzz_with_fizz_when_buzz_expected() throws Exception {
         System.out.println("play with a number that must be buzz and user gave a fizz");
-        Integer nextnumber = 6;
+        int nextnumber = 6;
         String playervalue = "BUZZ";
         BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
         try {
-            Integer result = instance.play(nextnumber, playervalue);
+            int result = instance.play(nextnumber, playervalue);
             fail("a PlayerMistakeException must be threw because it must be BUZZ but it was not, it returned " + result + " instead");
         } catch(PlayerMistakeException pmex) {
             assertTrue(true);

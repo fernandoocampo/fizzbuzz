@@ -29,7 +29,7 @@ public interface FizzBuzzGame {
      * @throws PlayerMistakeException if the player made a mistake with the
      * playervalue.
      */
-    Integer play(Integer nextnumber, String playervalue) 
+    int play(int nextnumber, String playervalue) 
         throws PlayerMistakeException;
     
 }
