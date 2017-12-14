@@ -70,6 +70,21 @@ public class BasicFizzBuzzGameTest {
     
     /**
      * Test of play method, of class BasicFizzBuzzGame. To make sure that when
+     * the next number is divisible by 5 and 3 the user gives the word: FIZ BUZZ.
+     */
+    @Test
+    public void do_play_fizzbuzz_with_fizzbuzz() throws Exception {
+        System.out.println("play with a number that must be fizz buzz");
+        int nextnumber = 15;
+        String playervalue = "FIZZ BUZZ";
+        BasicFizzBuzzGame instance = new BasicFizzBuzzGame();
+        int expResult = 15;
+        int result = instance.play(nextnumber, playervalue);
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of play method, of class BasicFizzBuzzGame. To make sure that when
      * the next number is not divisible by 5 neither 3 the user must give the 
      * number value as it comes.
      */
