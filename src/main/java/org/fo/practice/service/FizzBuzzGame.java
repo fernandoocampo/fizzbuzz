@@ -22,12 +22,12 @@ public interface FizzBuzzGame {
      * and the user gives a value that indicates if that next number is fizz, 
      * buzz or just the number.
      * 
-     * @param nextnumber next number in the sequence.
+     * @param nextnumber next number in the sequence of the game.
      * @param playervalue the value given by the player to indicate if the next 
      * number is a normal number, Fizz or Buzz.
      * @return the given next number.
      * @throws PlayerMistakeException if the player made a mistake with the
-     * playervalue.
+     * given value or if the system gives a null value.
      */
     int play(int nextnumber, String playervalue) 
         throws PlayerMistakeException;
